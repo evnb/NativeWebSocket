@@ -1,0 +1,35 @@
+{
+  "name": "hello-unity-nativewebsocket-glitch",
+  "version": "0.0.1",
+  "description": "A simple Node server for Unity, running on Glitch.com.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node NodeServer/index.js"
+  },
+  "author": {
+    "name": "Endel Dreyer",
+    "url": "https://github.com/endel"
+  },
+  "contributors": [
+    {"name":"Ben Ukhanov","url":"https://github.com/benukhanov"},
+    {"name":"Gaeel Bradshaw-Rodriguez","url":"https://github.com/Bradshaw"},
+    {"name":"Tom Bogin","url":"https://github.com/mentaman"},
+    {"name":"Evan Binder","url":"https://github.com/evnb"},
+    {"name":"Ryan Yang","url":"https://github.com/ryqndev"}
+  ],
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/evnb/NativeWebSocket/tree/glitch"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.4.2"
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "unity"
+  ]
+}

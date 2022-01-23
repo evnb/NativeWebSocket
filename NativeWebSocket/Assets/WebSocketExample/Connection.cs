@@ -13,7 +13,8 @@ public class Connection : MonoBehaviour
   async void Start()
   {
     // websocket = new WebSocket("ws://echo.websocket.org");
-    websocket = new WebSocket("ws://localhost:8080");
+    // websocket = new WebSocket("ws://localhost:8080");
+    websocket = new WebSocket("ws://my-glitch-url.glitch.me", new Dictionary<string, string>() { { "User-Agent", "Unity3D" } });
 
     websocket.OnOpen += () =>
     {

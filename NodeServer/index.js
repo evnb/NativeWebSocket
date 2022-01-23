@@ -1,12 +1,8 @@
 const crypto = require('crypto');
-const express = require('express');
 const { createServer } = require('http');
 const WebSocket = require('ws');
 
-const app = express();
-
-const server = createServer(app);
-const wss = new WebSocket.Server({ server });
+const wss = new WebSocket.Server({ port: 3000 });
 
 wss.on('connection', function(ws) {
   console.log("client joined.");
@@ -32,8 +28,4 @@ wss.on('connection', function(ws) {
     clearInterval(textInterval);
     clearInterval(binaryInterval);
   });
-});
-
-server.listen(8080, function() {
-  console.log('Listening on http://localhost:8080');
 });

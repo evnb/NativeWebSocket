@@ -1,3 +1,16 @@
+This is a modified branch on my fork of [endel/NativeWebSocket](https://github.com/endel/NativeWebSocket) to work with Glitch.com
+
+After making the Glitch.com project from this repo, open the project's terminal and run:
+```
+npm install
+```
+and then
+```
+refresh
+```
+**This only needs to be done when you create the project or add packages. Do not run `npm start` as Glitch will already be running the server automatically. Instead of the terminal, the server's `console.log` output will show up in the Glitch project's logs.**
+*These modifications successfully worked with Unity 2021.2.8f1. It will probably work on other versions but I didn't test it.*
+
 <img src="Media/header.png?raw=true" alt="Native WebSocket" />
 
 This is the simplest and easiest WebSocket library for Unity you can find!
